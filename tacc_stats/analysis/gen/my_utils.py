@@ -44,7 +44,7 @@ def summary_text(ld,ts,maxwidth=55,max_ibrun_lines=45):
              ', '
   top_text+='Queue: ' + ts.queue + '\n'
   top_text+='Start Time: ' + ts.start_date + ', End Time: ' + ts.end_date + '\n'
-  top_text+='Status: ' + ts.status + '\n'
+  top_text+='Status: ' + str(ts.status) + '\n'
   top_text+='Hosts: ' + str(ts.numhosts) + ', Threads: ' + str(ld.threads) + \
              ', Wayness: ' + str(ld.wayness) + '\n'
 
